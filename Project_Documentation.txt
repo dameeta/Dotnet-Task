@@ -34,14 +34,14 @@ Frontend (Client):
 
 3. IMPLEMENTATION STEPS & PACKAGES
 
-This section outlines the exact steps taken to build the project, useful for your presentation.
+This section gives and idea about the exact steps taken to build the project
 
 Step 1: Backend Initialization
 1. Created Project: "dotnet new webapi -n InventoryApi"
 2. Clean Project: Removed default WeatherForecast code and OpenAPI support to focus on GraphQL.
 
-Step 2: Installed Backend Packages
-We installed the following NuGet packages to enable GraphQL and Database features:
+Step 2: Installed Backend Package
+installed the following NuGet packages to enable GraphQL and Database features:
 - HotChocolate.AspNetCore: For the GraphQL server.
 - HotChocolate.Data: For sorting, filtering, and projections.
 - Microsoft.EntityFrameworkCore: ORM core.
@@ -85,7 +85,7 @@ Step 6: Frontend Implementation
 Prerequisites:
 - .NET 8 SDK
 - Node.js (v18 or higher)
-- Visual Studio 2022 (Optional, but recommended for Backend)
+- Visual Studio 2022 
 
 Part A: Start the Backend
 1. Open the folder "InventoryApi".
@@ -95,7 +95,7 @@ Part A: Start the Backend
    
    (Alternatively, open "Inventory.sln" in Visual Studio and press F5.)
    
-   Status: The backend will start on "http://localhost:5555".
+   as a result the backend application will start on "http://localhost:5555".
 
 Part B: Start the Frontend
 1. Open the folder "inventory-web".
@@ -103,7 +103,7 @@ Part B: Start the Frontend
 3. Run:
    npm run dev
    
-   Status: The frontend will start on "http://localhost:3000".
+   as a result the The frontend will start on "http://localhost:3000".
 
 -------------------
 
@@ -124,9 +124,9 @@ Part B: Start the Frontend
   
   query {
     items {
-      id
-      name
-      quantity
+      id : 1
+      name : " Shirt"
+      quantity :5
     }
   }
 
